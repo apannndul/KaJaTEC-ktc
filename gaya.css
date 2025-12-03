@@ -1,0 +1,50 @@
+/* ... (Bagian atas CSS tetap sama) ... */
+
+/* Tambahan: Variabel untuk melacak skala tombol */
+:root {
+    --scale-yes: 1;
+    --scale-no: 1;
+}
+
+/* Tombol & Respons */
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 15px 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    /* PENTING: Tambahkan Transisi untuk Perubahan Skala yang halus */
+    transition: background-color 0.3s, transform 0.5s ease-out; 
+    
+    /* Gunakan variabel CSS untuk skala awal */
+    transform: scale(var(--scale-initial));
+}
+
+/* Atur skala awal */
+#yes-btn {
+    background-color: #94A897;
+    transform: scale(var(--scale-yes));
+}
+
+#yes-btn:hover {
+    background-color: #7B8C7E; 
+}
+
+#no-btn {
+    background-color: #C47A7A;
+    transform: scale(var(--scale-no));
+}
+
+#no-btn:hover {
+    background-color: #A86F6F;
+}
+

@@ -1,0 +1,102 @@
+/* Palet Warna:
+   - Background: #E0EAE1 (Hijau Sage Pucat)
+   - Teks/Accent Dark: #4A5B4D
+   - YES Button: #94A897, NO Button: #C47A7A
+*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E0EAE1;
+    color: #4A5B4D; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Konten Utama */
+.main-content {
+    /* ... CSS sebelumnya ... */
+    max-width: 600px; 
+    width: 90%;
+    padding: 30px;
+    /* Tambahkan background agar konten utama tidak transparan */
+    background-color: rgba(224, 234, 225, 0.95); /* Sedikit transparan agar gambar background terlihat */
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.random-foto {
+    width: 180px; 
+    height: auto;
+    margin: 20px auto 40px auto;
+    position: top 400px right 200px;
+    
+    /* >>> PENAMBAHAN UNTUK ROTASI GAMBAR <<< */
+    transform: rotate(20deg); /* Contoh: Diputar 20 derajat searah jarum jam */
+    transition: transform 0.5s ease-in-out; /* Opsional: Agar rotasi terlihat halus saat ada perubahan */
+}
+
+.main-title {
+    /* ... CSS sebelumnya ... */
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.random-image {
+    /* KEMBALIKAN GAMBAR DI TENGAH */
+    width: 180px; 
+    height: auto;
+    margin: 20px auto 40px auto;
+}
+.random-gambar {
+    width: 180px; 
+    height: auto;
+    margin: 10px;
+}
+
+.question-text {
+    /* ... CSS sebelumnya ... */
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.buttons button {
+    transition: background-color 0.3s, transform 0.5s ease-out; 
+}
+
+#yes-btn {
+    background-color: #94A897;
+    transform: scale(var(--scale-yes));
+    border-radius: 15%;
+}
+
+#no-btn {
+    background-color: #C47A7A;
+    transform: scale(var(--scale-no));
+    border-radius: 15%;
+}
+
+.spotify-link {
+    display: inline-block;
+    background-color: #1DB954; /* Warna hijau Spotify */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.spotify-link:hover {
+    background-color: #1ED760;
+}
